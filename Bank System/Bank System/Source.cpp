@@ -104,3 +104,18 @@ void monthly_fee(Account& test) {
 
 
 int main() {
+    string name;
+    string pass;
+    cout << "------------------Hello To Our Bank------------------\n";
+    cout << "\n";
+    cout << "Enter The User Name : "; cin >> name;cout << "\n";
+    cout << "Enter The User Password :"; cin >> pass;cout << "\n";
+    cout << "================================================================\n"
+        << "System Items : " << "\n" << "1- Add Account \n" << "2- View Account" << "3- Deposite \n"
+        << "4- Withdraw \n" << "5- Save And Exit \n" << "6- Instructions\n"
+        <<"=================================================================";
+
+
+
+    return 0;
+}
