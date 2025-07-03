@@ -60,5 +60,5 @@ void monthly_fee(Account& test) {
 
 int main() {
 
-
+    int x, y;
 }
