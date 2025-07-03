@@ -48,9 +48,54 @@ public:
 
 };
 class current_acc : public Account {
+protected:
+    int overlimit; 
+
+public:
+    void withdraw(double am) {
+        if (overlimit <= am && am < balance) {
+            balance -= am;
+        }
+        else {
+            cout << "Invalid ammount\n";
+        }
+    }
+
+    void display_info() {
+        cout << "Account number : " << accnum << '\n'
+        << "Owner Name : " << ownerName << '\n'
+        << "balance : " << balance << '\n'
+        << "Your account tyoe is : cuurent account" << '\n';
+    }
+
+
 
 };
 class saving_acc : public Account {
+private:
+    double benfites = 0.2 * balance;
+
+public:
+
+    void added_ben() {
+        balance += benfites;
+    }
+
+    void withdraw(double am) {
+        if (am > balance) {
+            cout << "Invalid ammount\n";
+        }
+        else {
+            balance += am;
+        }
+    }
+
+    void display_info() {
+        cout << "Account number : " << accnum << '\n'
+        << "Owner name : " << ownerName << '\n'
+        << "balance : " << balance << '\n'
+        << "Your  account type is : Saving account" << '\n';
+    }
 
 };
 void monthly_fee(Account& test) {
@@ -59,6 +104,3 @@ void monthly_fee(Account& test) {
 
 
 int main() {
-
-    int x, y;
-}
