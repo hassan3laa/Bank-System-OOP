@@ -1,0 +1,25 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.log
+*.tlog
+*.lastbuildstate
+*.vcxproj.*
+*.vc.db
+*.idb
+*.ipch
+*.aps
+
+# Others
+*.cache
+*.db
+*.vsidx
